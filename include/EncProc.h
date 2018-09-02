@@ -9,9 +9,9 @@
 
 namespace crypto {
     namespace procedures {
-        using EncProc_t = void (*)(primitives::Block&, primitives::Block&);
+        using EncProc_t = void (*)(primitives::Block&, const primitives::Block&);
 
-        void XorAndShift(primitives::Block & block, primitives::Block& key);
+        void XorAndShift(primitives::Block & block, const primitives::Block& key);
     }
 }
 

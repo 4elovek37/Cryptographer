@@ -6,7 +6,7 @@
 
 namespace crypto {
     namespace procedures {
-        void XorAndShift(primitives::Block & block, primitives::Block& key)
+        void XorAndShift(primitives::Block & block, const primitives::Block& key)
         {
             block ^= key;
             block >> 1;
